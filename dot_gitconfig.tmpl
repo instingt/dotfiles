@@ -1,0 +1,13 @@
+[user]
+	name = Vitaliy Kataev
+	email = {{ .email }}
+	signingkey = {{ .gpgkey }}
+[core]
+	autocrlf = input
+	editor = nvim
+[merge]
+	conflictStyle = diff3
+[gpg]
+	program = {{ output "which" "gpg" }}
+[commit]
+	gpgsign = true
